@@ -29,7 +29,7 @@ module.exports.showListing=async (req,res)=>{
         req.flash("error","listing do not exist");
          return res.redirect("/listings");
     }
-    console.log(listing);
+
     res.render("listing/show",{listing})
 };
 module.exports.showEdit= async(req,res)=>{
