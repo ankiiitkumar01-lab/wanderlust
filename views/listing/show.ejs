@@ -68,8 +68,9 @@
                                 </div>
 
                             </div>
+                             <% if(currUser&&currUser._id.equals(listing.owner._id)){%>
                             <button class="btn btn-outline-dark">Submit</button>
-
+                                <%}%>
 
                         </form>
                         <hr>

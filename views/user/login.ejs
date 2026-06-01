@@ -1,4 +1,20 @@
 <% layout("/layout/boilerplate")%>
+<style>footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.f-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}</style>
 <div class="row mt-3">
     <h1 class="col-6 offset-3">loggin on waderlust</h1>
     <div class="col-6 offset-3">
@@ -21,7 +37,7 @@
                            />
                            
                 </div>
-                <button class="btn btn-success">login up</button>
+                <button class="btn btn-success">login</button>
         </form>
     </div>
 </div>
