@@ -1,4 +1,27 @@
-<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+
+ <style>
+       @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;          /* below navbar */
+    right: 10px;        /* stick to right */
+    width: 200px;       /* dropdown width */
+    background: white;  /* white panel */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    text-align: right;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 10px;
+  }
+}
+    </style><nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
